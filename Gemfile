@@ -41,3 +41,35 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bootstrap-sass', '~> 2.3.2.2'
+gem 'cancan'
+gem 'devise'
+gem 'devise_invitable'
+gem 'figaro'
+gem 'pg'
+gem 'rolify'
+gem 'thin'
+
+group :development do
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner', '1.0.1'
+  gem 'email_spec'
+end
+
